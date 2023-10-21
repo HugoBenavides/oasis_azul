@@ -15,20 +15,22 @@ const Navbar = () => {
     setLogo(!logo)
   }
 
+  console.log(nav)
+
   return (
-    <div className='flex justify-between items-center h-20 px-4'>
+    <div className='flex justify-between items-center h-20 px-4 absolute z-10 bg-gray-400/10 w-full'>
       <div>
-        {logo ? <></> : <h1>Albercas Oasis Azul</h1>   }
+        {logo ? <></> : <h1 className='text-white'>Albercas Oasis Azul</h1>   }
       </div>
-      <ul className='hidden md:flex'>
-        <li>Químicos</li>
-        <li>Equipos</li>
-        <li>Mantenimiento</li>
-        <li>Construcción</li>
-        <li>Cotización</li>
+      <ul className='hidden md:flex text-white cursor-pointer'>
+        <li className='hover:underline hover:font-bold decoration-white'>Químicos</li>
+        <li className='hover:underline hover:font-bold decoration-white'>Equipos</li>
+        <li className='hover:underline hover:font-bold decoration-white'>Mantenimiento</li>
+        <li className='hover:underline hover:font-bold decoration-white'>Construcción</li>
+        <li className='hover:underline hover:font-bold decoration-white'>Cotización</li>
       </ul>
-      <div className='hidden md:flex'>
-        <BiSearch size={20} />
+      <div className='hidden md:flex text-white'>
+        <BiSearch className='mr-2' size={20} />
         <BsPerson size={20} />
       </div>
       {/*Hamburguer*/}
