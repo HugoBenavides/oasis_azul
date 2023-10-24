@@ -15,7 +15,7 @@ const Navbar = () => {
     setLogo(!logo)
   }
 
-  console.log(nav)
+  //console.log(nav)
 
   return (
     <div className='flex justify-between items-center h-20 px-4 absolute z-10 bg-gray-400/10 w-full'>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       {/*Hamburguer*/}
       <div onClick={handleNav} className='md:hidden z-10'>
-        {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />    }
+        {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} className='text-white'/>    }
         
       </div>
       {/*Mobile*/}

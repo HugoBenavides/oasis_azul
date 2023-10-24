@@ -14,9 +14,9 @@
 }
 
 @layer base{
-    body{
+    body {
         @apply font-[Poppins]
-    }
+      }
 
     li{
         @apply p-4 text-xl
