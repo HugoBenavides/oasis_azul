@@ -10,7 +10,7 @@ const Products = () => {
     <div className="max-w-[1240px] mx-auto py-16 px-4 text-center font-[Poppins]">
       <h1>Tu alberca siempre lista para nadar</h1>
       <p className="my-3 text-xl">
-        Conservamos el agua limpia y cristalina en cualquier condición
+        Conservamos el agua limpia y cristalina en cualquier condición con nuestros productos o servicios.
       </p>
       <div className="grid grid-rows-none md:grid-cols-5 py-4 px-2 gap-2 md:gap-4">
         <div className="relative w-full h-full object-cover col-span-2 md:col-span-3 row-span-2">
