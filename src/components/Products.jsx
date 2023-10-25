@@ -23,7 +23,7 @@ const Products = () => {
         </div>
         <div className="relative w-full h-full object-cover">
           <img src={equipo} alt="equipo" />
-          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/50 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/60 cursor-pointer md:hover:text-white align-middle">
+          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/50 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/70 cursor-pointer md:hover:text-white align-middle">
             <p className="font-bold px-1 mt-[90px] md:mt-[6rem]">
               Equipos, Bombas y Accesorios
             </p>

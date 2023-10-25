@@ -8,7 +8,11 @@ export default {
     fontFamily: {
       'MyFont': ['Poppins', 'Roboto', 'serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'formulario': "url('assets/fondo_piscina.jpg')",
+      }
+    },
   },
   plugins: [],
 }
