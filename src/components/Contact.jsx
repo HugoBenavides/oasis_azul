@@ -66,7 +66,7 @@ const Contact = () => {
           EN LA COMPRA DE CLORO
         </p>
         <p className="py-4 font-bold">¿ALBERCA CON AGUA VERDE?</p>
-        <p className="bg-gray-900 text-gray-200 py-2">
+        <p className="bg-gray-900 text-gray-200 py-2 px-1">
           AGENDA UNA VISITA PARA QUE RESOLVAMOS TU PROBLEMA
         </p>
         <form>

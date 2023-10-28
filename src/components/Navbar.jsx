@@ -23,11 +23,11 @@ const Navbar = () => {
         {logo ? <></> : <h1 className='text-white'>Albercas Oasis Azul</h1>   }
       </div>
       <ul className='hidden md:flex text-white cursor-pointer'>
-        <li className='hover:underline hover:font-bold decoration-white'>Químicos</li>
-        <li className='hover:underline hover:font-bold decoration-white'>Equipos</li>
-        <li className='hover:underline hover:font-bold decoration-white'>Mantenimiento</li>
-        <li className='hover:underline hover:font-bold decoration-white'>Construcción</li>
-        <li className='hover:underline hover:font-bold decoration-white'>Cotización</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'>Químicos</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'>Equipos</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'>Mantenimiento</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'>Construcción</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'>Cotización</li>
       </ul>
       <div className='hidden md:flex text-white'>
         <BiSearch className='mr-2' size={20} />
