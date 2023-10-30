@@ -4,6 +4,7 @@ import equipo from "../assets/bomba.webp";
 import mantenimiento from "../assets/mantenimiento.jpg";
 import construccion from "../assets/construccion.webp";
 import cotizacion from "../assets/cotizacion.jpg";
+import ProductsCard from "./ProductsCard";
 
 const Products = () => {
   return (
@@ -22,46 +23,10 @@ const Products = () => {
             </p>
           </div>
         </div>
-        <div className="relative w-full h-full object-cover">
-          <img className="rounded-md" src={equipo} alt="equipo" />
-          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/50 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/70 cursor-pointer md:hover:text-white align-middle rounded-md transition">
-            <p className="font-bold px-1 mt-[90px] md:mt-[6rem]">
-              Equipos, Bombas y Accesorios
-            </p>
-          </div>
-        </div>
-        <div className="relative h-full w-full">
-          <img
-            className="h-full w-full object-cover rounded-md"
-            src={mantenimiento}
-            alt="mantenimiento"
-          />
-          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/40 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/60 cursor-pointer md:hover:text-white align-middle rounded-md transition">
-            <p className="font-bold mt-[70px] md:mt-[6rem] md:px-1">
-              Servicio de Mantenimiento y Limpieza
-            </p>
-          </div>
-        </div>
-        <div className="relative w-full h-full object-cover">
-          <img
-            className="w-full h-full rounded-md"
-            src={construccion}
-            alt="construccion"
-          />
-          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/40 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/60 cursor-pointer md:hover:text-white align-middle rounded-md transition">
-            <p className="font-bold mt-[40px] md:mt-[4rem]">Construcción</p>
-          </div>
-        </div>
-        <div className="relative w-full h-full object-cover">
-          <img
-            className="w-full h-full rounded-md"
-            src={cotizacion}
-            alt="cotizacion"
-          />
-          <div className="absolute w-full h-full top-0 left-0 right-0 bg-gray-900/30 text-white md:text-transparent md:bg-transparent md:hover:bg-gray-900/40 cursor-pointer md:hover:text-white align-middle rounded-md transition">
-            <p className="font-bold mt-[40px] md:mt-[4rem]">Cotización</p>
-          </div>
-        </div>
+        <ProductsCard bg={equipo} alt={"equipo"} text={"Equipos, Bombas y Accesorios"} />
+        <ProductsCard bg={mantenimiento} alt={"manteninimiento"} text={"Servicio de limpieza y mantenimiento"} />
+        <ProductsCard bg={construccion} alt={"construccion"} text={"Construcción"} />
+        <ProductsCard bg={cotizacion} alt={"cotizacion"} text={"Cotización"} />
       </div>
     </div>
   );
