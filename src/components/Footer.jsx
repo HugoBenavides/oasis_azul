@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {FaFacebook,FaTwitter,FaInstagram,FaPinterest, FaYoutube} from 'react-icons/fa'
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
             <div className='flex md:justify-center'>
                 <ul className='md:flex '>
                     <li className='text-[16px] text-[--primary-dark]'>WhatsApp +52 55 XXXXXXXX</li>
-                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Químicos</li>
+                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/quimicos'>Químicos</Link></li>
                     <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Equipo</li>
                     <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Mantenimiento</li>
                     <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Construcción</li>

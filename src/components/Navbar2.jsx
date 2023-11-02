@@ -22,7 +22,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-20 px-4 absolute z-10 bg-[--primary-dark] w-full">
+    <div className="flex justify-between items-center h-20 px-4 bg-[--primary-dark] w-full">
       <div>
         {logo ? <></> : <h1 className="text-white"><Link to='/'>Albercas Oasis Azul</Link></h1>}
       </div>

@@ -42,8 +42,8 @@ const Navbar = () => {
       {/*Mobile*/}
       <div className={nav ? 'absolute top-0 left-0 w-full bg-gray-100/90 px-4 flex flex-col' : 'absolute left-[-100%]' }>
         <ul>
-          <h1>Albercas Oasis Azul</h1>
-          <li className='border-b-2 border-blue-800'>Químicos</li>
+          <h1><Link to='/'>Albercas Oasis Azul</Link></h1>
+          <li className='border-b-2 border-blue-800'><Link to='/quimicos'>Químicos</Link></li>
           <li className='border-b-2 border-blue-800'>Equipos</li>
           <li className='border-b-2 border-blue-800'>Mantenimiento</li>
           <li className='border-b-2 border-blue-800'>Construcción</li>
