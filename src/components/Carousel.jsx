@@ -30,7 +30,7 @@ const Carousel = () => {
       <BsArrowRightSquareFill onClick={nextSlide} className="absolute top-[60%] md:top-[50%] text-3xl cursor-pointer right-8  text-black md:text-4xl md:text-sky-600 z-10"/>
       <div className="max-w-[1240px] m-auto px-4 py-8 relative flex justify-center items-center">
         {sliderData.map((items, key) => (
-          <div className={key === slide ? 'opacity-100 transition':'opacity-0'}>
+          <div key={key} className={key === slide ? 'opacity-100 transition':'opacity-0'}>
             {key === slide && <img className="w-full rounded-md" src={items.src} alt={items.alt} /> }
           </div>
         ))}

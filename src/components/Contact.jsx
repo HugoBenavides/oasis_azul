@@ -1,10 +1,27 @@
 import React from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
-import {AiOutlineWhatsApp,AiOutlineSend} from 'react-icons/ai'
-
-
+import { AiOutlineWhatsApp, AiOutlineSend } from "react-icons/ai";
 
 const Contact = () => {
+  const currentDate = new Date();
+
+  const minDate =
+    currentDate.getFullYear() +
+    "-" +
+    (currentDate.getMonth() + 1) +
+    "-" +
+    currentDate.getDate();
+
+  const maxDate = "2024-12-31";
+
+  function getDate() {
+
+    const val = document.getElementById("date").value;
+    val <= minDate ? alert("OTRO DIA") : null;
+    console.log(val)
+  }
+
+
   return (
     <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-4 px-4 py-2">
       <div className="md:col-span-2 flex flex-col justify-evenly text-center ">
@@ -72,7 +89,11 @@ const Contact = () => {
         <form>
           <div className="flex flex-col items-center">
             <label className="py-1 font-bold my-2">Tipo de Servicio</label>
-            <select name="tipo" className="w-auto font-[Poppins] text-blue-900 text-center rounded-sm" required>
+            <select
+              name="tipo"
+              className="w-auto font-[Poppins] text-blue-900 text-center rounded-sm"
+              required
+            >
               <option value="aguaVerde">Agua verde/Rescate de agua</option>
               <option value="limpieza">Limpieza profunda de alberca</option>
               <option value="revison">Revisión de bomba/filtro/caldera</option>
@@ -88,7 +109,15 @@ const Contact = () => {
           </div>
           <div className="flex flex-col items-center">
             <label className="font-bold my-2">Fecha de visita</label>
-            <input className="w-auto text-blue-900 text-center rounded-sm focus:outline-none" type="date" required />
+            <input
+              id="date"
+              className="w-auto text-blue-900 text-center rounded-sm focus:outline-none"
+              type="date"
+              min={minDate}
+              max={maxDate}
+              onBlur={getDate}
+              required
+            />
           </div>
           <div className="flex flex-col items-center">
             <label className="font-bold my-2">Nombre</label>
@@ -115,7 +144,13 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col items-center">
-            <button className=" flex flex-row items-center my-4 hover:bg-green-400" onClick={(e)=>e.preventDefault()}>AGENDAR<AiOutlineSend className="ml-2" size={30} /></button>
+            <button
+              className=" flex flex-row items-center my-4 hover:bg-green-400"
+              onClick={(e) => e.preventDefault()}
+            >
+              AGENDAR
+              <AiOutlineSend className="ml-2" size={30} />
+            </button>
           </div>
         </form>
       </div>

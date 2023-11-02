@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import {BsPerson} from 'react-icons/bs'
 import {BiSearch} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
@@ -23,7 +24,7 @@ const Navbar = () => {
         {logo ? <></> : <h1 className='text-white'>Albercas Oasis Azul</h1>   }
       </div>
       <ul className='hidden md:flex text-white cursor-pointer'>
-        <li className='hover:underline hover:font-bold decoration-white transition'>Químicos</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/quimicos'>Químicos</Link></li>
         <li className='hover:underline hover:font-bold decoration-white transition'>Equipos</li>
         <li className='hover:underline hover:font-bold decoration-white transition'>Mantenimiento</li>
         <li className='hover:underline hover:font-bold decoration-white transition'>Construcción</li>
