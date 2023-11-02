@@ -25,10 +25,10 @@ const Navbar = () => {
       </div>
       <ul className='hidden md:flex text-white cursor-pointer'>
         <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/quimicos'>Químicos</Link></li>
-        <li className='hover:underline hover:font-bold decoration-white transition'>Equipos</li>
-        <li className='hover:underline hover:font-bold decoration-white transition'>Mantenimiento</li>
-        <li className='hover:underline hover:font-bold decoration-white transition'>Construcción</li>
-        <li className='hover:underline hover:font-bold decoration-white transition'>Cotización</li>
+        <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/equipos'>Equipos</Link></li>
+        <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/mantenimiento'>Mantenimiento</Link></li>
+        <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/construccion'>Construcción</Link></li>
+        <li className='hover:underline hover:font-bold decoration-white transition'><Link to='/equipos'>Cotización</Link></li>
       </ul>
       <div className='hidden md:flex text-white'>
         <BiSearch className='mr-2' size={20} />
@@ -44,10 +44,10 @@ const Navbar = () => {
         <ul>
           <h1><Link to='/'>Albercas Oasis Azul</Link></h1>
           <li className='border-b-2 border-blue-800'><Link to='/quimicos'>Químicos</Link></li>
-          <li className='border-b-2 border-blue-800'>Equipos</li>
-          <li className='border-b-2 border-blue-800'>Mantenimiento</li>
-          <li className='border-b-2 border-blue-800'>Construcción</li>
-          <li className='border-b-2 border-blue-800'>Cotización</li>
+          <li className='border-b-2 border-blue-800'><Link to='/equipos'>Equipos</Link></li>
+          <li className='border-b-2 border-blue-800'><Link to='/mantenimiento'>Mantenimiento</Link></li>
+          <li className='border-b-2 border-blue-800'><Link to='/construccion'>Construcción</Link></li>
+          <li className='border-b-2 border-blue-800'><Link to='/cotizacion'>Cotización</Link></li>
           <div className='flex flex-col'>
             <button className='my-2'>Search</button>
             <button className='mb-2'>Account</button>

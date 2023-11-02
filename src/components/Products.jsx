@@ -27,10 +27,10 @@ const Products = () => {
             </Link>
           </div>
         </div>
-        <ProductsCard bg={equipo} alt={"equipo"} text={"Equipos, Bombas y Accesorios"} />
-        <ProductsCard bg={mantenimiento} alt={"manteninimiento"} text={"Servicio de limpieza y mantenimiento"} />
-        <ProductsCard bg={construccion} alt={"construccion"} text={"Construcción"} />
-        <ProductsCard bg={cotizacion} alt={"cotizacion"} text={"Cotización"} />
+        <ProductsCard bg={equipo} alt={"equipo"} text={"Equipos, Bombas y Accesorios"} link={"/equipos"} />
+        <ProductsCard bg={mantenimiento} alt={"manteninimiento"} text={"Servicio de limpieza y mantenimiento"} link={"/mantenimiento"} />
+        <ProductsCard bg={construccion} alt={"construccion"} text={"Construcción"} link={"/construccion"} />
+        <ProductsCard bg={cotizacion} alt={"cotizacion"} text={"Cotización"} link={"/cotizacion"} />
       </div>
     </div>
   );

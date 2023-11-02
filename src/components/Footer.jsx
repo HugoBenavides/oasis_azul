@@ -20,10 +20,10 @@ const Footer = () => {
                 <ul className='md:flex '>
                     <li className='text-[16px] text-[--primary-dark]'>WhatsApp +52 55 XXXXXXXX</li>
                     <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/quimicos'>Químicos</Link></li>
-                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Equipo</li>
-                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Mantenimiento</li>
-                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Construcción</li>
-                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'>Cotización</li>
+                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/equipos'>Equipos</Link></li>
+                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/mantenimiento'>Mantenimiento</Link></li>
+                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/construccion'>Construcción</Link></li>
+                    <li className='cursor-pointer text-[16px] text-[--primary-dark]'><Link to='/cotizacion'>Cotización</Link></li>
                 </ul>
             </div>
         </div>
