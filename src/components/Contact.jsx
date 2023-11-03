@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiOutlineWhatsApp, AiOutlineSend } from "react-icons/ai";
+import { collection, addDoc } from "firebase/firestore"; 
+import { db } from "../firebase";
+
 
 const Contact = () => {
   const currentDate = new Date();
@@ -14,13 +17,39 @@ const Contact = () => {
 
   const maxDate = "2024-12-31";
 
-  function getDate() {
+  //Hooks para usar en el form y firebase
+
+  const [service, setService] = useState("");
+  const [formDate, setFormDate] = useState("");
+  const [name, setName] = useState("");
+  const [tel, setTel] = useState("");
+
+  const handleSubmit = async (e)=>{
+      //allow read, write: if request.time > timestamp.date(2023, 11, 1); agregar esa regla a FIREBASE en caso de tirar error de permisos
+      e.preventDefault();
+      try {
+        const create = await addDoc(collection(db,"appointment"),{
+          service: service,
+          formDate: formDate,
+          name: name,
+          tel: tel
+        }).then(alert("Su cita fue creada con éxito. El equipo de Albercas Oasis Azul se pondrá en contacto con ustes a la brevedad posible"));
+        console.log("Su cita ha sido creada con el ID: ",create.id)
+      } catch (error) {
+        alert(error.message);
+      }
+      setService("Agua verde/Rescate de agua")
+      setFormDate("")
+      setName("")
+      setTel("")
+    }
+
+  /*function getDate() {
 
     const val = document.getElementById("date").value;
     val <= minDate ? alert("OTRO DIA") : null;
     console.log(val)
-  }
-
+  }*/
 
   return (
     <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-4 px-4 py-2">
@@ -86,12 +115,16 @@ const Contact = () => {
         <p className="bg-gray-900 text-gray-200 py-2 px-1">
           AGENDA UNA VISITA PARA QUE RESOLVAMOS TU PROBLEMA
         </p>
-        <form>
+
+        {/*FORMULARIO DE CONTACTO */}
+
+        <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center">
             <label className="py-1 font-bold my-2">Tipo de Servicio</label>
             <select
-              name="tipo"
               className="w-auto font-[Poppins] text-blue-900 text-center rounded-sm"
+              value={service}
+              onChange={(e)=>setService(e.target.value)}
               required
             >
               <option value="aguaVerde">Agua verde/Rescate de agua</option>
@@ -110,13 +143,12 @@ const Contact = () => {
           <div className="flex flex-col items-center">
             <label className="font-bold my-2">Fecha de visita</label>
             <input
-              id="date"
               className="w-auto text-blue-900 text-center rounded-sm focus:outline-none"
               type="date"
               min={minDate}
               max={maxDate}
-              onBlur={getDate}
-              required
+              value={formDate}
+              onChange={(e)=>setFormDate(e.target.value)}
             />
           </div>
           <div className="flex flex-col items-center">
@@ -125,10 +157,11 @@ const Contact = () => {
               className="w-auto md:max-w-[300px] h-[40px] text-blue-900 rounded-sm focus:outline-none pl-2"
               type="text"
               placeholder="Introduce tu nombre"
-              required
               pattern="[a-z, A-Z]{3,40}"
               minLength={3}
               maxLength={40}
+              value={name}
+              onChange={(e)=>setName(e.target.value)}
             />
           </div>
           <div className="flex flex-col items-center">
@@ -137,16 +170,17 @@ const Contact = () => {
               className="w-auto md:max-w-[300px] h-[40px] text-blue-900 rounded-sm focus:outline-none pl-2"
               type="tel"
               pattern="[0-9]{10}"
-              required
               maxLength={10}
               minLength={10}
               placeholder="10 digitos"
+              value={tel}
+              onChange={(e)=>setTel(e.target.value)}
             />
           </div>
           <div className="flex flex-col items-center">
             <button
+              type="submit"
               className=" flex flex-row items-center my-4 hover:bg-green-400"
-              onClick={(e) => e.preventDefault()}
             >
               AGENDAR
               <AiOutlineSend className="ml-2" size={30} />
