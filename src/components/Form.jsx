@@ -13,9 +13,14 @@ const Form = () => {
     "-" +
     currentDate.getDate();
 
-  const maxDate = "2024-12-31";
+    
 
-  //console.log(minDate)
+    console.log(typeof(minDate))
+    
+    const maxDate = "2024-12-31";
+    console.log(typeof(maxDate))
+
+  
 
   //Hooks para usar en el form y firebase
   const [service, setService] = useState("");
@@ -59,8 +64,6 @@ const Form = () => {
     }
   */
     
-
-
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -102,7 +105,6 @@ const Form = () => {
             max={maxDate}
             value={formDate}
             onChange={(e) => setFormDate(e.target.value)}
-            onBlur={handleDate}
             required
           />
         </div>
