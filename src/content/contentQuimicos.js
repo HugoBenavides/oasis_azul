@@ -14,6 +14,7 @@ const contentQuimicos = [
     description:
       "Este es el tipo de cloro más usado para comenzar con la limpieza del agua para tu alberca ",
     use: "",
+    symbol: "$",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const contentQuimicos = [
     description:
       "Los flulantes siver para atrapar los elementos solidos suspendidos dentro del agua",
     use: "",
+    symbol: "$",
   },
   {},
 ];
