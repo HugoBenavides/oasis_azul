@@ -12,10 +12,10 @@ const Home = () => {
     <div>
         <Navbar />
         <Hero />
+        <Carousel /> 
         <Products />
         <Contact />
         <Catalog />
-        <Carousel /> 
         <Footer />
     </div>
   )
