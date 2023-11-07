@@ -7,6 +7,7 @@ import Equipos from './pages/Equipos'
 import Mantenimiento from './pages/Mantenimiento'
 import Construccion from './pages/Construccion'
 import Cotizacion from './pages/Cotizacion'
+import Cloro from './pages/Cloro'
 
 
 
@@ -16,11 +17,12 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='quimicos' element={<Quimicos />} />
-        <Route path='equipos' element={<Equipos />} />
-        <Route path='mantenimiento' element={<Mantenimiento />} />
-        <Route path='construccion' element={<Construccion />} />
-        <Route path='cotizacion' element={<Cotizacion />} />
+        <Route path='/quimicos' element={<Quimicos />} />
+        <Route path='/equipos' element={<Equipos />} />
+        <Route path='/mantenimiento' element={<Mantenimiento />} />
+        <Route path='/construccion' element={<Construccion />} />
+        <Route path='/cotizacion' element={<Cotizacion />} />
+        <Route path='/quimicos/cloro' element={<Cloro />} />
       </Routes>
     </div>
   )

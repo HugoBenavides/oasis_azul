@@ -31,8 +31,7 @@ const contentQuimicos = [
     use: "",
     symbol: "$",
     currency: "MXN",
-  },
-  {},
+  }
 ];
 
 export default contentQuimicos;
