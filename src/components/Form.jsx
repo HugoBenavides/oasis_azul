@@ -13,14 +13,7 @@ const Form = () => {
     "-" +
     currentDate.getDate();
 
-    
-
-    console.log(typeof(minDate))
-    
-    const maxDate = "2024-12-31";
-    console.log(typeof(maxDate))
-
-  
+  const maxDate = "2024-12-31"
 
   //Hooks para usar en el form y firebase
   const [service, setService] = useState("");
