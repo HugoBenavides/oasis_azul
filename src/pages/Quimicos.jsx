@@ -34,7 +34,7 @@ const Quimicos = () => {
         <CardCategory
           img={cloro}
           title={"Alguicidas"}
-          text={"Elimina el color verdel del agua"}
+          text={"Elimina el color verde del agua"}
         />
       </div>
       <Footer />

@@ -8,6 +8,7 @@ import Mantenimiento from './pages/Mantenimiento'
 import Construccion from './pages/Construccion'
 import Cotizacion from './pages/Cotizacion'
 import Cloro from './pages/Cloro'
+import ProductDatail from './components/ProductDatail'
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/construccion' element={<Construccion />} />
         <Route path='/cotizacion' element={<Cotizacion />} />
         <Route path='/quimicos/cloro' element={<Cloro />} />
+        <Route path='/quimicos/cloro/:product' element={<ProductDatail />} />
       </Routes>
     </div>
   )

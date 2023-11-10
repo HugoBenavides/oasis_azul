@@ -5,6 +5,7 @@ const contentQuimicos = [
   {
     id: 1,
     productName: "Dicloro",
+    urlName: "dicloro",
     img: imgTest,
     category: "cloro",
     size: "Cuñete",
@@ -20,6 +21,7 @@ const contentQuimicos = [
   {
     id: 2,
     productName: "Floculante",
+    urlName: "floculante",
     img: floculante,
     category: "cloro",
     size: "Cuñete",
