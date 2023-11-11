@@ -40,8 +40,8 @@ const Form = () => {
         )
       );
       console.log("Su cita ha sido creada con el ID: ", create.id);
-    } catch (error) {
-      alert(error.message);
+    } catch (err) {
+      alert(err.message);
     }
     setService("Agua verde/Rescate de agua");
     setFormDate("");
