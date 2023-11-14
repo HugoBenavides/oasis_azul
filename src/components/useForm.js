@@ -50,6 +50,7 @@ const useForm = () => {
     setName,
     setTel,
     setEmail,
+    handleSubmit
   };
 };
 
