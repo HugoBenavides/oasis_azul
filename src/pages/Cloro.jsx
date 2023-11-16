@@ -20,7 +20,7 @@ const Cloro = () => {
         {isPending && <div>CARGANDO...</div>}
         {filterSort && filterSort.map((item) => {
           return (
-            <Link to={`/quimicos/cloro/${item.urlName}`} key={item.id}>
+            <Link to={`/quimicos/cloro/${item.id}`} key={item.id}>
               <CardCloro
                 img={item.img}
                 productName={item.productName}

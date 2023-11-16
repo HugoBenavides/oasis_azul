@@ -1,12 +1,11 @@
 {
     "contentProducts": [
-        {
-            "id": 1,
-            "productName": "Dicloro",
+        {   "id": 1,
             "urlName": "dicloro",
+            "productName": "Dicloro",
             "img": "assets/cloro.webp",
             "category": "cloro",
-            "size": "Cuñete",
+            "size": "Cunete",
             "messure": "litros",
             "messureQuantity": 50,
             "price": 999.9,
@@ -17,8 +16,8 @@
         },
         {
             "id": 2,
-            "productName": "Floculante",
             "urlName": "floculante",
+            "productName": "Floculante",
             "img": "assets/cloro.webp",
             "category": "cloro",
             "size": "Cuñete",

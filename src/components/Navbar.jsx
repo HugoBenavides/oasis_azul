@@ -32,7 +32,8 @@ const Navbar = () => {
       </ul>
       <div className='hidden md:flex text-white'>
         <BiSearch className='mr-2' size={20} />
-        <BsPerson size={20} />
+        <Link to='/login'><BsPerson size={20} /></Link>
+        
       </div>
       {/*Hamburguer*/}
       <div onClick={handleNav} className='md:hidden z-10'>
@@ -50,7 +51,7 @@ const Navbar = () => {
           <li className='border-b-2 border-blue-800'><Link to='/cotizacion'>Cotización</Link></li>
           <div className='flex flex-col'>
             <button className='my-2'>Search</button>
-            <button className='mb-2'>Account</button>
+            <Link to='/login'><button className="mb-2 w-full">Account</button></Link>
           </div>
           <div className='flex justify-between'>
             <FaFacebook className='icon' />

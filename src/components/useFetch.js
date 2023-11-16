@@ -31,7 +31,7 @@ const useFetch = (url) => {
         } else {
           setError(err.message); //se acutializa el error con el mensaje y se renderiza
           setIsPending(false); //se desactiva el CARGANDO... en caso de que exista un error
-          setProducts([]); //se actualiza el estado de los datos de products para que no se mapee nada
+          
         }
       });
 

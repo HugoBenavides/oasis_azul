@@ -45,7 +45,7 @@ const Navbar2 = () => {
       </ul>
       <div className="hidden md:flex text-white">
         <BiSearch className="mr-2" size={20} />
-        <BsPerson size={20} />
+        <Link to='/login'><BsPerson size={20} /></Link>
       </div>
       {/*Hamburguer*/}
       <div onClick={handleNav} className="md:hidden z-10">
@@ -59,7 +59,7 @@ const Navbar2 = () => {
       <div
         className={
           nav
-            ? "absolute top-0 left-0 w-full bg-gray-100/90 px-4 flex flex-col"
+            ? "absolute top-0 left-0 w-full bg-gray-100/90 px-4 flex flex-col z-10"
             : "absolute left-[-100%]"
         }
       >
@@ -72,7 +72,8 @@ const Navbar2 = () => {
           <li className="border-b-2 border-blue-800"><Link to='/cotizacion'>Cotización</Link></li>
           <div className="flex flex-col">
             <button className="my-2">Search</button>
-            <button className="mb-2">Account</button>
+            
+            <Link to='/login'><button className="mb-2 w-full">Account</button></Link>
           </div>
           <div className="flex justify-between">
             <FaFacebook className="icon" />
