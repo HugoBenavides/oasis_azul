@@ -10,7 +10,6 @@ const ProductDatail = () => {
     const {id} = useParams();
 
     const {data, error, isPending} = useFetch("http://localhost:8000/contentProducts/" + id);
-
     
 
   return (

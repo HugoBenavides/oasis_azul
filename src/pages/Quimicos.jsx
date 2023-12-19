@@ -3,6 +3,9 @@ import Navbar2 from "../components/Navbar2";
 import Footer from "../components/Footer";
 import CardCategory from "../components/CardCategory";
 import cloro from "../assets/cloro.webp";
+import floculante from "../assets/floculante.jpg"
+import clarificador from "../assets/clarificador.jpg"
+import alguicida from "../assets/alguicidas.jpg"
 import { Link } from "react-router-dom";
 
 
@@ -22,17 +25,17 @@ const Quimicos = () => {
           />
         </Link>
         <CardCategory
-          img={cloro}
+          img={floculante}
           title={"Floculantes"}
           text={"Atrapa partículas suspendidas"}
         />
         <CardCategory
-          img={cloro}
+          img={clarificador}
           title={"Clarificadores"}
           text={"Agua cristalina siempre"}
         />
         <CardCategory
-          img={cloro}
+          img={alguicida}
           title={"Alguicidas"}
           text={"Elimina el color verde del agua"}
         />

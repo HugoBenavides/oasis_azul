@@ -10,7 +10,7 @@ const Cloro = () => {
    
     const { data, isPending, error} = useFetch ("http://localhost:8000/contentProducts");
 
-  const filterSort = data.filter((a) => a.category === "cloro");
+  const filterSort = data.filter(a => a.category === "cloro");
 
   return (
     <div>
